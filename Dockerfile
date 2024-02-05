@@ -13,7 +13,7 @@ RUN git clone https://github.com/iqblsnnta5/panel /panel
 WORKDIR /panel
 
 # Start Docker
-RUN systemctl start docker
+RUN service start docker
 
 # Start the application
 CMD ["docker-compose", "up", "-d"]
