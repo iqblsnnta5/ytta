@@ -12,8 +12,6 @@ RUN git clone https://github.com/iqblsnnta5/panel /panel
 # Set working directory
 WORKDIR /panel
 
-# Start Docker
-RUN service start docker
 
 # Start the application
 CMD ["docker-compose", "up", "-d"]
